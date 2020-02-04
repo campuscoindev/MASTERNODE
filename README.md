@@ -31,7 +31,7 @@ When last checked, machines at that price range offered the following specificat
 
 ***
 #### (Optional) VPS Harden
-*This step is optional, and highly recommended by our longtime supporter [BKCrypto1] (https://github.com/BKCrypto1) to secure your VPS. 
+*This step is optional, and highly recommended by our longtime supporter [BKCrypto1](https://github.com/BKCrypto1) to secure your VPS. 
 
 As [BKCrypto1](https://github.com/BKCrypto1) points out, [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a robust VPS Hardening script. 
 ```
@@ -141,10 +141,10 @@ Also, if you want to check/start/stop CampusCoin , run one of the following comm
 
 **Ubuntu 16.04**:
 ```
-systemctl status CampusCoin #To check the service is running.
-systemctl start CampusCoin #To start CampusCoin service.
-systemctl stop CampusCoin #To stop CampusCoin service.
-systemctl is-enabled CampusCoin #This will check if the CampusCoin service is enabled on boot or not
+systemctl status CampusCoin      #Checks if the service is running.
+systemctl start CampusCoin       #Start your CampusCoin service.
+systemctl stop CampusCoin        #Stop your CampusCoin service.
+systemctl is-enabled CampusCoin  #Checks if the CampusCoin service is enabled on boot.
 ```
 
 If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO).
