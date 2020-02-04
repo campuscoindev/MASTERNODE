@@ -148,5 +148,5 @@ systemctl is-enabled CampusCoin  #Checks if the CampusCoin service is enabled on
 ```
 
 If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO).
-CC Donations: ```Cawn4BSvSuPFHk3wo43Nm85CG8TW1Y2s1H``
+CC Donations: ''Cawn4BSvSuPFHk3wo43Nm85CG8TW1Y2s1H''
 
