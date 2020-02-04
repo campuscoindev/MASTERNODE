@@ -1,5 +1,5 @@
 # CampusCoin Masternode
-For your convenience, CampusCoin provides a shell script to help install your CampusCoin Masternode (https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that the masternode itself does not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  If you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and monitoring.  Our focus here is on the CampusCoin Masternode.
+For your convenience, CampusCoin provides a shell script to help install your [CampusCoin Masternode] (https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that your masternode will not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  Should you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and/or monitoring services.  Our focus here is on the CampusCoin Masternode.
 
 *CampusCoin provides no guarantees to the suitability or fitness of such code.  Use at your own discretion and at your own risk.
 
@@ -16,7 +16,7 @@ Please see the following table that outlines the three CampusCoin Masternode Tie
 
 ***
 ## VPS
-Nearly any Virtual Server Provider (VPS) may be used.  Look for reputable companies that have been around for some time.  Some of these companies will advertise their uptime.  Higher uptime generally means higher costs.  Commonly used is Digital Ocean - https://www.digitalocean.com/pricing or Vultr - https://www.vultr.com/products/cloud-compute/#pricing.  Set up a bare bones VPS.  The $5.00/month options at each -for our purposes - should be sufficient.
+Nearly any Virtual Server Provider (VPS) may be used.  Look for reputable companies that have been around for some time.  Some of these companies will advertise their uptime.  Higher uptime generally means higher costs.  Commonly used is Digital Ocean - https://www.digitalocean.com/pricing or Vultr - https://www.vultr.com/products/cloud-compute/#pricing.  You will need only a basic VPS, and the $5.00/month options at each - for our purposes - should be sufficient.
 When last checked, machines at that price range offered the following specifications:
 
 1 GB Memory
