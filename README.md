@@ -40,23 +40,23 @@ git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash
 **VPS-Harden will guide you through a series of steps to better secure your VPS. If you choose to run it, please complete to its entirety.**
 
 Steps:
-(automated)
+(AUTOMATED)
 >  1. OS Updates
 >  2. System Upgrades
 >  3. Favored Packages
 >  4. Crypto Packages
 
-(User Selection)
->  5.  Create Non-Root User (y/n)
->  6.  SSH Config (Enter Port)
->  7.  Pass Auth (y/n)
->  8.  Firewall Config (y/n)
->  9.  Hardening (y/n)
-> 10. Ksplice Uptrack (y/n)
-> 11. Enhance MOTD (y/n)
-> 12. Restart SSH (y/n)
+(USER SELECTIONS)
+>  5. Create Non-Root User    (Y/N)
+>  6. SSH Config              (Choose Port Number)
+>  7. Pass Auth               (Y/N)
+>  8. Firewall Config         (Y/N)
+>  9. Hardening               (Y/N)
+> 10. Ksplice Uptrack         (Y/N)
+> 11. Enhance MOTD            (Y/N)
+> 12. Restart SSH             (Y/N)
 
-Once it completes, please reconnect to your VPS to continue on to the Masternode Installation.
+Once the script completes, please reconnect to your VPS to continue on to the Masternode Installation.
 ***
 
 ## Installation of your CampusCoin Masternode Service (v3.0.2.2)
