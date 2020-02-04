@@ -1,94 +1,95 @@
 # CampusCoin Masternode
-Shell script to install a [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04. 
+For your convenience, CampusCoin provides a shell script to help install your CampusCoin Masternode (https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that the masternode itself does not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  If you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and monitoring.  Our focus here is on the CampusCoin Masternode.
 
-*Use it on your own risk.
+*CampusCoin provides no guarantees to the suitability or fitness of such code.  Use at your own discretion and at your own risk.
 
 ***
-## CC Masternode Tiers
+## CampusCoin Masternode Tiers
 
-The Following Table represents the CC Masternode Tiers. It's a good idea to choose what tier you are looking to start prior to starting this setup.
+Please see the following table that outlines the three CampusCoin Masternode Tiers.  Before getting underway, it helps if you decide which tier level that you want to operate.
 
-| Tier             | Amount Required |
+| TIER LEVEL     | CC REQUIRED |
 | --- | --- |
-| Tier 1 | 500,000 CC |
-| Tier 2 | 1,000,000 CC |
-| Tier 3 | 2,000,000 CC |
+| TIER I   |   500,000 CC |
+| TIER II  | 1,000,000 CC |
+| TIER III | 2,000,000 CC |
 
 ***
 ## VPS
-Sign up for either (referral link) [Digital Ocean](https://m.do.co/c/93c45618280e) or [Vultr](https://www.vultr.com/?ref=7763785) and set up a bare bones VPS. The $5/month option is sufficient for our needs. If you use the DO link above, you will get $100, 60-day credit.
-- 1GB / 1CPU
-- 25GB SSD
-- 1TB Transfer
+Nearly any Virtual Server Provider (VPS) may be used.  Look for reputable companies that have been around for some time.  Some of these companies will advertise their uptime.  Higher uptime generally means higher costs.  Commonly used is Digital Ocean - https://www.digitalocean.com/pricing or Vultr - https://www.vultr.com/products/cloud-compute/#pricing.  Set up a bare bones VPS.  The $5.00/month options at each -for our purposes - should be sufficient.
+When last checked, machines at that price range offered the following specifications:
 
-The install script will take care of the swap file for you.
+1 GB Memory
+1 vCPU
+25GB SSD
+1 TB Transfer per month
+
 ***
-## Installation:
+## CampusCoin Installation:
 1. Login as root
 2. Run the following commands
 
 ***
 #### (Optional) VPS Harden
-*This step is optional, but highly recommended  to secure your VPS. 
+*This step is optional, and highly recommended by our longtime supporter [BKCrypto1] (https://github.com/BKCrypto1) to secure your VPS. 
 
-[NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a fantastic VPS Hardening script. 
+As [BKCrypto1](https://github.com/BKCrypto1) points out, [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a robust VPS Hardening script. 
 ```
 git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash get-hard.sh
 ```
-**VPS-Harden will guide you through a series of installation steps. Complete to its entirety.**
+**VPS-Harden will guide you through a series of steps to better secure your VPS. If you choose to run it, please complete to its entirety.**
 
 Steps:
 (automated)
->1. OS Updates
->2. System Upgrades
->3. Favored Packages
->4. Crypto Packages
+>  1. OS Updates
+>  2. System Upgrades
+>  3. Favored Packages
+>  4. Crypto Packages
 
 (User Selection)
->5. Create Non-Root User (y/n)
->6. SSH Config (Enter Port)
->7. Pass Auth (y/n)
->8. Firewall Config (y/n)
->9. Hardening (y/n)
->10. Ksplice Uptrack (y/n)
->11. Enhance MOTD (y/n)
->12. Restart SSH (y/n)
+>  5.  Create Non-Root User (y/n)
+>  6.  SSH Config (Enter Port)
+>  7.  Pass Auth (y/n)
+>  8.  Firewall Config (y/n)
+>  9.  Hardening (y/n)
+> 10. Ksplice Uptrack (y/n)
+> 11. Enhance MOTD (y/n)
+> 12. Restart SSH (y/n)
 
-Complete & Reconnect to VPS
-
+Once it completes, please reconnect to your VPS to continue on to the Masternode Installation.
 ***
 
-## Install CampusCoin Masternode Service (v3.0.2.2)
+## Installation of your CampusCoin Masternode Service (v3.0.2.2)
 ```
-wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
+wget https://github.com/campuscoindev/MASTERNODE/cc_mn_install.sh && bash cc_mn_install.sh
 ```
 
-**CC-Install will guide you through the installation of the CampusCoin Masternode Service.**
+**CC_MN_Install will guide you through the installation of your New CampusCoin Masternode Service.**
 
 Steps:
 1. Installation of Dependencies
-2. (optional) Masternode Private Key - If you have one generated, you can place one here. Otherwise, press enter to be provided with a newly generated key.
-3. Download CC Blockchain Snapshot
-4. CC Server Start
+2. (Optional) Masternode Private Key - If you have one generated, you can place one here. If you do not have one, press enter.  A new key will be generated.
+3. Download the latest CampusCoin Blockchain Snapshot
+4. CampusCoin Masternode Server Startup
 
 Complete. You will be provided with a bunch of masternode information. Save this information for the next step.
 
-### Update Existing CampusCoin Masternode Service (Prior to v3.0.2.2)
+### RESOURCE:  If Needing To Update or Refresh An EXISTING CampusCoin Masternode Service
 ```
-wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
+wget https://raw.githubusercontent.com/campuscoindev/MASTERNODE/cc_mn_update.sh && bash cc_mn_update.sh
 ```
 
-Note: If you have used this script in the past, you may need to remove the old update file before downloading 
+REMINDER: If you used this script in the past, the bash script may need to be removed before you can run it again. 
 ```
-rm -rf update_cc_mn.sh
+rm -rf cc_mn_update.sh
 ```
 
 ***
 
 ## Desktop wallet setup
 
-After the MN is up and running, you need to configure the desktop wallet accordingly.
-1. Open the CampusCoin (CC) Coin Desktop Wallet.
+After your New CampusCoin Masternode is up and running, please configure your desktop wallet accordingly.
+1. Open your CampusCoin (CC) Coin Desktop Wallet.
 2. Go to RECEIVE and create a New Address: MN1
 3. Send the required CC to MN1. (Choose which tier you want.)
 4. Wait for at least 15 confirmations.
@@ -146,7 +147,6 @@ systemctl stop CampusCoin #To stop CampusCoin service.
 systemctl is-enabled CampusCoin #This will check if the CampusCoin service is enabled on boot or not
 ```
 
-If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO). I go by the name of BK in both Channels.
-
-CC Donations: ```CNUfWFCDHH3711MbbF7Q7zTf7ctU6LkETi```
+If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO).
+CC Donations: ```Cawn4BSvSuPFHk3wo43Nm85CG8TW1Y2s1H``
 
