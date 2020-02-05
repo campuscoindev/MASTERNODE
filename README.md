@@ -1,4 +1,4 @@
-# CampusCoin Masternode
+# CampusCoin Masternode Deployment
 For your convenience, CampusCoin provides a shell script to help install your [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that your masternode will not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  Should you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and/or monitoring services.  Our focus here is on the CampusCoin Masternode, however a base hardening script is referenced for your consideration.
 
 *CampusCoin provides no guarantees to the suitability or fitness of such code.  Use at your own discretion and at your own risk.
