@@ -147,9 +147,14 @@ systemctl stop CampusCoin        #Stop your CampusCoin service.
 systemctl is-enabled CampusCoin  #Checks if the CampusCoin service is enabled on boot.
 ```
 
+## Help:
+
 If you need any assistance, feel free to ask over at our [Discord](https://discord.gg/m6qUBKy) or [Telegram](https://t.me/CMPCO) channel.
 
-If you would like to donate to help grow the project, anything would help.
+
+## Thank You:
+
+If you would like to donate to help grow our project, anything you contribute will help.
 
 Thanks,
 
