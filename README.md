@@ -30,10 +30,10 @@ When last checked, machines at that price range offered the following specificat
 2. Run the following commands
 
 ***
-#### (Optional) VPS Harden
-*This step is optional, and highly recommended by our longtime supporter [BKCrypto1](https://github.com/BKCrypto1) to secure your VPS. 
+#### (Optional) VPS Harden - 3rd Party Security Script
+*This step is optional, and highly recommended by our longtime supporter [BKCrypto1](https://github.com/BKCrypto1) to secure your VPS.  CampusCoin does not control the following script.  However, excellent results have been experienced by CampusCoin Masternode Operators.  We have personally used this script with success, and find value presenting here. 
 
-As [BKCrypto1](https://github.com/BKCrypto1) points out, [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a robust VPS Hardening script. 
+As [BKCrypto1](https://github.com/BKCrypto1) points out through his page, [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed this robust VPS Hardening script. 
 ```
 git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash get-hard.sh
 ```
@@ -55,7 +55,7 @@ git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash
 | 11. | Enhance MOTD           | User Prompt Y/N|
 | 12. | Restart SSH            | User Prompt Y/N|
 
-Once the script completes, please reconnect to your VPS to continue on to the Masternode Installation.
+Once the script completes, please reconnect to your VPS to continue on to the CampusCoin Masternode Installation.
 ***
 
 ## Installation of your CampusCoin Masternode Service (v3.0.2.2)
