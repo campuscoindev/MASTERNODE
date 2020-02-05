@@ -151,15 +151,17 @@ systemctl is-enabled CampusCoin  #Checks if the CampusCoin service is enabled on
 
 If you need any assistance, feel free to ask over at our [Discord](https://discord.gg/m6qUBKy) or [Telegram](https://t.me/CMPCO) channel.
 
+***
 
 ## Thank You:
 
-If you would like to donate to help grow our project, anything you contribute will help.
+CampusCoin exists because of you, the members of our CampusCoin Community.  We cannot function without your ongoing support.  We encourage you to participate in our social media, and to tell others of your experience and help our CampusCoin Family to grow.  We need your support, and any way you can volunteer will help us to succeed.  If you would like to donate to help grow our project, anything you contribute goes right back into building the project.
 
 Thanks,
 
 CampusCoin Project
 
+***
 
 Type | Donation Address
 ------------- | -------------
