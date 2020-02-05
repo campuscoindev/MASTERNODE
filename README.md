@@ -61,7 +61,7 @@ Once the script completes, please reconnect to your VPS to continue on to the Ma
 
 ## Installation of your CampusCoin Masternode Service (v3.0.2.2)
 ```
-wget https://raw.githubusercontent.com/campuscoindev/MASTERNODE/cc_mn_install.sh && bash cc_mn_install.sh
+wget https://raw.githubusercontent.com/campuscoindev/MASTERNODE/master/cc_mn_install.sh && bash cc_mn_install.sh
 ```
 
 **CC_MN_Install will guide you through the installation of your New CampusCoin Masternode Service.**
@@ -76,7 +76,7 @@ Complete. You will be provided with a bunch of masternode information. Save this
 
 ### RESOURCE:  If Needing To Update or Refresh An EXISTING CampusCoin Masternode Service
 ```
-wget https://raw.githubusercontent.com/campuscoindev/MASTERNODE/cc_mn_update.sh && bash cc_mn_update.sh
+wget https://raw.githubusercontent.com/campuscoindev/MASTERNODE/master/cc_mn_update.sh && bash cc_mn_update.sh
 ```
 
 REMINDER: If you used this script in the past, the bash script may need to be removed before you can run it again. 
