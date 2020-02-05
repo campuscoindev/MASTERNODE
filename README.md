@@ -1,5 +1,5 @@
 # CampusCoin Masternode Deployment
-For your convenience, CampusCoin provides a shell script to help install your [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that your masternode will not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  Should you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and/or monitoring services.  Our focus here is on the CampusCoin Masternode, however a base hardening script is referenced for your consideration.
+For your convenience, CampusCoin provides a shell script to help install your [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04.  It should be noted that your masternode will not contain overly sensitive information.  Because of this, the use of 'root' is commonplace, and the masternode is easily replaced, refreshed, or updated.  Should you choose to separately store sensitive or confidential information on your masternode, please consider use of SSH keys, hardening scripts, and/or monitoring services.  Our focus here is on the CampusCoin Masternode, however a base hardening script and several commands are referenced for your security considerations.
 
 *CampusCoin provides no guarantees to the suitability or fitness of such code.  Use at your own discretion and at your own risk.
 
@@ -39,22 +39,21 @@ git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash
 ```
 **VPS-Harden will guide you through a series of steps to better secure your VPS. If you choose to run it, please complete to its entirety.**
 
-Steps:
-(AUTOMATED)
->  1. OS Updates
->  2. System Upgrades
->  3. Favored Packages
->  4. Crypto Packages
 
-(USER SELECTIONS)
->  5. Create Non-Root User    (Y/N)
->  6. SSH Config              (Choose Port Number)
->  7. Pass Auth               (Y/N)
->  8. Firewall Config         (Y/N)
->  9. Hardening               (Y/N)
-> 10. Ksplice Uptrack         (Y/N)
-> 11. Enhance MOTD            (Y/N)
-> 12. Restart SSH             (Y/N)
+|# | Description | How Applied |
+|------------- | ------------- | -------------|
+|  1. | OS Updates             | Automatic|
+|  2. | System Upgrades        | Automatic|
+|  3. | Favored Packages       | Automatic|
+|  4. | Crypto Packages        | Automatic|
+|  5. | Create Non-Root User   | User Prompt Y/N|
+|  6. | SSH Config             | User Prompt & Choose Port#|
+|  7. | Pass Auth              | User Prompt Y/N|
+|  8. | Firewall Config        | User Prompt Y/N|
+|  9. | Hardening              | User Prompt Y/N|
+| 10. | Ksplice Uptrack        | User Prompt Y/N|
+| 11. | Enhance MOTD           | User Prompt Y/N|
+| 12. | Restart SSH            | User Prompt Y/N|
 
 Once the script completes, please reconnect to your VPS to continue on to the Masternode Installation.
 ***
