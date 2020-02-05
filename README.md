@@ -136,6 +136,12 @@ startmasternode "alias" 0
 cc-cli getinfo
 cc-cli mnsync status
 cc-cli masternode status
+cc-cli getblockcount
+cc-cli getblockchaininfo
+cc-cli getconnectioncount
+cc-cli masternode winners
+cc-cli getpeerinfo
+
 ```
 Also, if you want to check/start/stop CampusCoin , run one of the following commands as **root**:
 
@@ -146,7 +152,14 @@ systemctl start CampusCoin       #Start your CampusCoin service.
 systemctl stop CampusCoin        #Stop your CampusCoin service.
 systemctl is-enabled CampusCoin  #Checks if the CampusCoin service is enabled on boot.
 ```
-
+  **Other Potentially Useful Commands**:
+ ``` 
+  cc-cli getnetworkhashps | awk '{print $1/1000000000}'     #Get Network hash Per Second in GH/s
+  last -25 -i                                               #Show last 25 successful server logons
+  egrep "Failed|Failure|invalid" /var/log/auth.log          #Show server logon attempts
+  ```
+    
+ 
 ## Help:
 
 If you need any assistance, feel free to ask over at our [Discord](https://discord.gg/m6qUBKy) or [Telegram](https://t.me/CMPCO) channel.
