@@ -22,7 +22,7 @@ NC="\033[0m"
 }
 function set_variables() {
 CONFIGFOLDER="/root/.cc"
-COIN_SNAPSHOT="https://www.dropbox.com/s/p66flxb99blv509/CC-SNAPSHOT-FEB03-2020-FULL-TO-BLK1235040.zip"
+COIN_SNAPSHOT="https://www.dropbox.com/s/twstpudu0g7gc5x/CC-SNAPSHOT-MAR26-2020-FULL-TO-BLK1305902.zip"
 }
 function stop_service() {
 echo -e "${RED}Stopping CC MasterNode Service${NC}"
@@ -57,7 +57,7 @@ echo -e "${GREEN}Retrieve Latest Official CC Snapshot...${NC}"
 TMP_FOLDER=$(mktemp -d)
   cd $TMP_FOLDER
   wget --progress=bar:force $COIN_SNAPSHOT 2>&1
-  unzip CC-SNAPSHOT-FEB03-2020-FULL-TO-BLK1235040.zip -d $CONFIGFOLDER/
+  unzip CC-SNAPSHOT-MAR26-2020-FULL-TO-BLK1305902.zip -d $CONFIGFOLDER/
   cd -
   rm -rf $TMP_FOLDER >/dev/null 2>&1
 }
