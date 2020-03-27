@@ -27,7 +27,7 @@ COIN_CLI='cc-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/campuscoindev/CC/releases/download/3.0.2.2/cc_linux.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_SNAPSHOT='https://www.dropbox.com/s/p66flxb99blv509/CC-SNAPSHOT-FEB03-2020-FULL-TO-BLK1235040.zip'
+COIN_SNAPSHOT='https://www.dropbox.com/s/twstpudu0g7gc5x/CC-SNAPSHOT-MAR26-2020-FULL-TO-BLK1305902.zip'
 COIN_NAME='CampusCoin'
 COIN_PORT=28195
 RPC_PORT=28196
@@ -59,7 +59,7 @@ function download_snapshot() {
   TMP_FOLDER=$(mktemp -d)
   cd $TMP_FOLDER
   wget --progress=bar:force $COIN_SNAPSHOT 2>&1
-  unzip CC-SNAPSHOT-FEB03-2020-FULL-TO-BLK1235040.zip -d $CONFIGFOLDER/
+  unzip CC-SNAPSHOT-MAR26-2020-FULL-TO-BLK1305902.zip -d $CONFIGFOLDER/
   cd -
   rm -rf $TMP_FOLDER >/dev/null 2>&1
 }
