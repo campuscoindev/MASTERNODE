@@ -75,7 +75,7 @@ Complete. You will be provided with a bunch of masternode information. Save this
 
 ### RESOURCE:  If Needing To Update or Refresh An EXISTING CampusCoin Masternode Service
 ```
-wget https://github.com/campuscoindev/MASTERNODE/raw/master/cc_mn_update.sh && bash cc_mn_update.sh
+wget -N https://github.com/campuscoindev/MASTERNODE/raw/master/cc_mn_update.sh && bash cc_mn_update.sh
 ```
 
 REMINDER: If you used this script in the past, the bash script may need to be removed before you can run it again. 
